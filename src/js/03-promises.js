@@ -19,14 +19,12 @@ function createPromise(position, delay) {
 }
 
 const handlePromise = (e) => {
-  e.preventDefault(); // Забороняємо перезавантаження сторінки
+  e.preventDefault(); 
 
-  // Отримуємо значення полів форми
   const delay = parseInt(delayEl.value);
   const step = parseInt(stepEl.value);
   const amount = parseInt(amountEl.value);
 
-  // Запускаємо цикл для створення промісів
   for (let i = 1; i <= amount; i += 1) {
     const position = i;
     const promiseDelay = delay + (i - 1) * step;

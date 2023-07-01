@@ -14,7 +14,6 @@ function getRandomHexColor() {
 intervalTimeColor = setInterval(() => {
     bodyEl.style.backgroundColor = getRandomHexColor();
   }, 1000);
-
     startButtonEl.removeEventListener('click', handleClickStart)
 }
 
